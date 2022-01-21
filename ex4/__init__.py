@@ -7,4 +7,7 @@ def cross_join(employees, departments):
     :return: Генератор пар (LastName, DepartmentName)
     """
     # put your code here
+    for employee in employees:
+        for department in departments:
+            yield (employee, department)
     pass
